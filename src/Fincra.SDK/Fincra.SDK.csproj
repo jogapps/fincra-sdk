@@ -13,10 +13,12 @@
     <None Remove="Beneficiary\" />
     <None Remove="ChargeBack\" />
     <None Remove="Collection\" />
+    <None Remove="Conversion\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Beneficiary\" />
     <Folder Include="ChargeBack\" />
     <Folder Include="Collection\" />
+    <Folder Include="Conversion\" />
   </ItemGroup>
 </Project>

@@ -8,9 +8,10 @@ namespace Fincra.SDK
     public interface IFincraApi
     {
         IBusinessApi Business { get; }
-        IBeneficiaryApi Beneficiary { get;  }
+        IBeneficiaryApi Beneficiary { get; }
         IChargeBackApi ChargeBacks { get; }
-        ICollectionApi Collection { get;  }
+        ICollectionApi Collection { get; }
+        IConversionApi Conversion { get; }
     }
 
     public class FincraApi : IFincraApi
@@ -29,6 +30,7 @@ namespace Fincra.SDK
             Beneficiary = new BeneficiaryApi(this);
             ChargeBacks = new ChargeBackApi(this);
             Collection = new CollectionApi(this);
+            Conversion = new ConversionApi(this);
         }
 
         //public static JsonSerializerSettings SerializerSettings { get; } = new JsonSerializerSettings
@@ -41,6 +43,7 @@ namespace Fincra.SDK
         public IBeneficiaryApi Beneficiary { get; }
         public IChargeBackApi ChargeBacks { get; }
         public ICollectionApi Collection { get; }
+        public IConversionApi Conversion { get; }
 
 
         //private static T ParseAndResolveData<T>(ref string rawJson)
