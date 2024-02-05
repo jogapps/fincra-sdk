@@ -35,12 +35,59 @@
 
             var queryParameters = new Dictionary<string, string>
             {
-                { "business", request.Business },
-                { "reference", request.Reference },
                 { "page", request.Page.ToString() },
                 { "perPage", request.PerPage.ToString() }
             };
+
+            if (!string.IsNullOrEmpty(request.Business))
+            {
+                queryParameters.Add("business", request.Business);
+            }
+
+            if (!string.IsNullOrEmpty(request.SourceCurrency))
+            {
+                queryParameters.Add("sourceCurrency", request.SourceCurrency);
+            }
+
+            if (!string.IsNullOrEmpty(request.DestinationCurrency))
+            {
+                queryParameters.Add("destinationCurrency", request.DestinationCurrency);
+            }
+
+            if (!string.IsNullOrEmpty(request.SubAccount))
+            {
+                queryParameters.Add("subAccount", request.SubAccount);
+            }
+
+            if (request.DateFrom != null)
+            {
+                queryParameters.Add("dateFrom", request.DateFrom.ToString());
+            }
+
+            if (request.DateTo != null)
+            {
+                queryParameters.Add("dateTo", request.DateTo.ToString());
+            }
+
+            if (request.Status != null)
+            {
+                for (int i = 0; i < request.Status.Length; i++)
+                {
+                    string key = $"status";
+                    string value = request.Status[i];
+                    queryParameters.Add(key, value);
+                }
+            }
             return _api.Get<ApiResponse<dynamic>>($"{FincraRoutes.Collection}", queryParameters);
+        }
+
+        public ApiResponse<dynamic> FetchCollectionAddition(string BusinessId, string Reference)
+        {
+            var queryParameters = new Dictionary<string, string>
+            {
+                { "business", BusinessId },
+            };
+            return _api.Get<ApiResponse<dynamic>>($"{FincraRoutes.Collection}/reference/{Reference}", queryParameters);
         }
     }
 }
