@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Beneficiary\" />
+    <None Remove="ChargeBack\" />
+    <None Remove="Collection\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Beneficiary\" />
+    <Folder Include="ChargeBack\" />
+    <Folder Include="Collection\" />
+  </ItemGroup>
+</Project>

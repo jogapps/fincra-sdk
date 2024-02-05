@@ -1,0 +1,12 @@
+/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/bin/Debug/net7.0/Fincra.SDK.deps.json
+/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/bin/Debug/net7.0/Fincra.SDK.dll
+/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/bin/Debug/net7.0/Fincra.SDK.pdb
+/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/obj/Debug/net7.0/Fincra.SDK.csproj.AssemblyReference.cache
+/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/obj/Debug/net7.0/Fincra.SDK.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/obj/Debug/net7.0/Fincra.SDK.AssemblyInfoInputs.cache
+/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/obj/Debug/net7.0/Fincra.SDK.AssemblyInfo.cs
+/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/obj/Debug/net7.0/Fincra.SDK.csproj.CoreCompileInputs.cache
+/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/obj/Debug/net7.0/Fincra.SDK.dll
+/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/obj/Debug/net7.0/refint/Fincra.SDK.dll
+/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/obj/Debug/net7.0/Fincra.SDK.pdb
+/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/obj/Debug/net7.0/ref/Fincra.SDK.dll

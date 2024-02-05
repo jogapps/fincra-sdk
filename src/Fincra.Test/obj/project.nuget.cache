@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "sZrvVnd14LbukLaK7KlbBAq1pOL5Rjk8U+F6yHiMgOXKNNa8p2BTDish2og98Y9x1lDlgb5A/AFo8IeLk1M3/A==",
+  "success": true,
+  "projectFilePath": "/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.Test/Fincra.Test.csproj",
+  "expectedPackageFiles": [
+    "/Users/jemiforgodspower/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/faker.net/2.0.154/faker.net.2.0.154.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/microsoft.codecoverage/17.5.0/microsoft.codecoverage.17.5.0.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/microsoft.net.test.sdk/17.5.0/microsoft.net.test.sdk.17.5.0.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/microsoft.testplatform.objectmodel/17.5.0/microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/microsoft.testplatform.testhost/17.5.0/microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/nunit.analyzers/3.6.1/nunit.analyzers.3.6.1.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/nunit3testadapter/4.4.2/nunit3testadapter.4.4.2.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
