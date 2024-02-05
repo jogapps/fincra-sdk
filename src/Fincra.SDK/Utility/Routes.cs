@@ -10,6 +10,7 @@
 		public const string VirtualAccount = "/profile/virtual-accounts/transfer";
 		public const string Wallet = "/wallets/topups";
         public const string Collection = "/collections";
+		public const string Conversion = "/conversions";
     }
 }
 
