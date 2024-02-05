@@ -11,6 +11,7 @@
 		public const string Wallet = "/wallets/topups";
         public const string Collection = "/collections";
 		public const string Conversion = "/conversions";
+		public const string Quote = "/quotes/generate";
     }
 }
 

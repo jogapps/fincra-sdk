@@ -12,6 +12,7 @@ namespace Fincra.SDK
         IChargeBackApi ChargeBacks { get; }
         ICollectionApi Collection { get; }
         IConversionApi Conversion { get; }
+        IQuoteApi Quote { get; }
     }
 
     public class FincraApi : IFincraApi
@@ -31,6 +32,7 @@ namespace Fincra.SDK
             ChargeBacks = new ChargeBackApi(this);
             Collection = new CollectionApi(this);
             Conversion = new ConversionApi(this);
+            Quote = new QuoteApi(this);
         }
 
         //public static JsonSerializerSettings SerializerSettings { get; } = new JsonSerializerSettings
@@ -44,6 +46,7 @@ namespace Fincra.SDK
         public IChargeBackApi ChargeBacks { get; }
         public ICollectionApi Collection { get; }
         public IConversionApi Conversion { get; }
+        public IQuoteApi Quote { get; }
 
 
         //private static T ParseAndResolveData<T>(ref string rawJson)
