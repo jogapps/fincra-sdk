@@ -25,7 +25,7 @@
                 { "page", request.Page.ToString() },
                 { "perPage", request.PerPage.ToString() }
             };
-            return _api.Get<ApiResponse<dynamic>>($"{FincraRoutes.Wallet}", queryParameters);
+            return _api.Get<ApiResponse<dynamic>>($"{FincraRoutes.Wallet}/topups", queryParameters);
         }
 
         public ApiResponse<dynamic> ListCollectionAdditional(CollectionParams request)

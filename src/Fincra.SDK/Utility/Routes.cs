@@ -8,7 +8,7 @@
 		public const string Beneficiary = "/profile/beneficiaries/business";
 		public const string ChargeBack = "/collections/chargebacks";
 		public const string VirtualAccount = "/profile/virtual-accounts/transfer";
-		public const string Wallet = "/wallets/topups";
+		public const string Wallet = "/wallets";
         public const string Collection = "/collections";
 		public const string Conversion = "/conversions";
 		public const string Quote = "/quotes/generate";

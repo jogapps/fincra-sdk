@@ -14,6 +14,7 @@ namespace Fincra.SDK
         IConversionApi Conversion { get; }
         IQuoteApi Quote { get; }
         IVerifyApi Verify { get; }
+        IWalletApi Wallet { get; }
     }
 
     public class FincraApi : IFincraApi
@@ -35,6 +36,7 @@ namespace Fincra.SDK
             Conversion = new ConversionApi(this);
             Quote = new QuoteApi(this);
             Verify = new VerifyApi(this);
+            Wallet = new WalletApi(this);
         }
 
         //public static JsonSerializerSettings SerializerSettings { get; } = new JsonSerializerSettings
@@ -50,6 +52,7 @@ namespace Fincra.SDK
         public IConversionApi Conversion { get; }
         public IQuoteApi Quote { get; }
         public IVerifyApi Verify { get; }
+        public IWalletApi Wallet { get; }
 
 
         //private static T ParseAndResolveData<T>(ref string rawJson)

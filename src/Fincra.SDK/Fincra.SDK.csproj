@@ -15,6 +15,7 @@
     <None Remove="Collection\" />
     <None Remove="Conversion\" />
     <None Remove="Verify\" />
+    <None Remove="Wallet\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Beneficiary\" />
@@ -22,5 +23,6 @@
     <Folder Include="Collection\" />
     <Folder Include="Conversion\" />
     <Folder Include="Verify\" />
+    <Folder Include="Wallet\" />
   </ItemGroup>
 </Project>
