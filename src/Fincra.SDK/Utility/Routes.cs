@@ -14,6 +14,7 @@
 		public const string Quote = "/quotes/generate";
 		public const string Core = "/core";
 		public const string Checkout = "/checkout/payments";
+		public const string Payout = "/disbursements/payouts";
     }
 }
 
