@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+    <PackageId>com.Fincra.SDK.Dotnet</PackageId>
+    <Authors>Jemifor Godspower</Authors>
+    <Company>Jemifor Godspower</Company>
+    <Description>Fincra Dotnet SDK</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>Fintech, Fincra, Dotnet, .net, SDK, sdks</PackageTags>
+    <RepositoryUrl>https://github.com/jogapps/fincra-sdk</RepositoryUrl>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>

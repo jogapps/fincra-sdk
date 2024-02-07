@@ -87,7 +87,7 @@ namespace Fincra.SDK
         public bool ShouldSerializeRegistrationNumber() => !string.IsNullOrEmpty(RegistrationNumber);
     }
 
-    public class createPayoutRequest
+    public class CreatePayoutRequest
     {
         [JsonProperty("sourceCurrency")]
         public string? SourceCurrency { get; set; }
