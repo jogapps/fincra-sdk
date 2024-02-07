@@ -12,6 +12,8 @@
         public const string Collection = "/collections";
 		public const string Conversion = "/conversions";
 		public const string Quote = "/quotes/generate";
+		public const string Core = "/core";
+		public const string Checkout = "/checkout/payments";
     }
 }
 

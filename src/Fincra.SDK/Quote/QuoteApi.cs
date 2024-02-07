@@ -3,7 +3,7 @@ namespace Fincra.SDK
     public class QuoteApi : IQuoteApi
     {
         private readonly FincraApi _api;
-        public ConversionApi(FincraApi api)
+        public QuoteApi(FincraApi api)
         {
             _api = api;
         }

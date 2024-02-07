@@ -13,6 +13,7 @@ namespace Fincra.SDK
         ICollectionApi Collection { get; }
         IConversionApi Conversion { get; }
         IQuoteApi Quote { get; }
+        IVerifyApi Verify { get; }
     }
 
     public class FincraApi : IFincraApi
@@ -33,6 +34,7 @@ namespace Fincra.SDK
             Collection = new CollectionApi(this);
             Conversion = new ConversionApi(this);
             Quote = new QuoteApi(this);
+            Verify = new VerifyApi(this);
         }
 
         //public static JsonSerializerSettings SerializerSettings { get; } = new JsonSerializerSettings
@@ -47,6 +49,7 @@ namespace Fincra.SDK
         public ICollectionApi Collection { get; }
         public IConversionApi Conversion { get; }
         public IQuoteApi Quote { get; }
+        public IVerifyApi Verify { get; }
 
 
         //private static T ParseAndResolveData<T>(ref string rawJson)
@@ -92,6 +95,38 @@ namespace Fincra.SDK
             foreach (var param in queryParameters)
             {
                 queryString += param.Key + "=" + param.Value + "&";
+            }
+
+            string responseStr = _client.GetAsync(relativeUrl + queryString)
+                                            .Result
+                                            .Content
+                                            .ReadAsStringAsync()
+                                            .Result;
+
+            Console.WriteLine(responseStr);
+            return JsonConvert.DeserializeObject<T>(responseStr);
+        }
+
+        internal T Get<T>(string relativeUrl,
+            Dictionary<string, string> queryParameters = null,
+            Dictionary<string, string> customHeaders = null)
+        {
+            string queryString = "?";
+
+            if (queryParameters != null)
+            {
+                foreach (var param in queryParameters)
+                {
+                    queryString += param.Key + "=" + param.Value + "&";
+                }
+            }
+
+            if (customHeaders != null)
+            {
+                foreach (var header in customHeaders)
+                {
+                    _client.DefaultRequestHeaders.Add(header.Key, header.Value);
+                }
             }
 
             string responseStr = _client.GetAsync(relativeUrl + queryString)

@@ -14,11 +14,13 @@
     <None Remove="ChargeBack\" />
     <None Remove="Collection\" />
     <None Remove="Conversion\" />
+    <None Remove="Verify\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Beneficiary\" />
     <Folder Include="ChargeBack\" />
     <Folder Include="Collection\" />
     <Folder Include="Conversion\" />
+    <Folder Include="Verify\" />
   </ItemGroup>
 </Project>
