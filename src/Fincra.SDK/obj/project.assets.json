@@ -61,7 +61,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/Fincra.SDK.csproj",
-      "projectName": "Fincra.SDK",
+      "projectName": "com.Fincra.SDK.Dotnet",
       "projectPath": "/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/Fincra.SDK.csproj",
       "packagesPath": "/Users/jemiforgodspower/.nuget/packages/",
       "outputPath": "/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/obj/",
@@ -108,12 +108,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.11, 7.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.11, 7.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100-rc.1.23463.5/RuntimeIdentifierGraph.json"
       }
     }
   }
