@@ -399,17 +399,17 @@
           }
         }
       },
-      "Fincra.SDK/1.0.0": {
+      "com.Fincra.SDK.Dotnet/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "bin/placeholder/Fincra.SDK.dll": {}
+          "bin/placeholder/com.Fincra.SDK.Dotnet.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Fincra.SDK.dll": {}
+          "bin/placeholder/com.Fincra.SDK.Dotnet.dll": {}
         }
       }
     }
@@ -1039,7 +1039,7 @@
         "version.txt"
       ]
     },
-    "Fincra.SDK/1.0.0": {
+    "com.Fincra.SDK.Dotnet/1.0.0": {
       "type": "project",
       "path": "../Fincra.SDK/Fincra.SDK.csproj",
       "msbuildProject": "../Fincra.SDK/Fincra.SDK.csproj"
@@ -1048,11 +1048,11 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Faker.Net >= 2.0.154",
-      "Fincra.SDK >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
       "NUnit3TestAdapter >= 4.4.2",
+      "com.Fincra.SDK.Dotnet >= 1.0.0",
       "coverlet.collector >= 3.2.0"
     ]
   },
@@ -1134,12 +1134,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.11, 7.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.11, 7.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100-rc.1.23463.5/RuntimeIdentifierGraph.json"
       }
     }
   }

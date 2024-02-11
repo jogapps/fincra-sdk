@@ -5,7 +5,7 @@ namespace Fincra.SDK
     public class Address
     {
         [JsonProperty("country")]
-        public required string Country { get; set; }
+        public string? Country { get; set; }
 
         [JsonProperty("state")]
         public string? State { get; set; }
@@ -22,6 +22,14 @@ namespace Fincra.SDK
         [JsonProperty("street")]
         public string? Street { get; set; }
         public bool ShouldSerializeStreet() => !string.IsNullOrEmpty(Street);
+
+        [JsonProperty("countryOfResidence")]
+        public string? CountryOfResidence { get; set; }
+        public bool ShouldSerializeCountryOfResidence() => !string.IsNullOrEmpty(CountryOfResidence);
+
+        [JsonProperty("number")]
+        public string? Number { get; set; }
+        public bool ShouldSerializeNumber() => !string.IsNullOrEmpty(Number);
     }
 
     public class Bank
@@ -46,7 +54,8 @@ namespace Fincra.SDK
     public class BeneficiaryRequest
 	{
         [JsonProperty("firstName")]
-        public required string FirstName { get; set; }
+        public string? FirstName { get; set; }
+        public bool ShouldSerializeFirstName() => !string.IsNullOrEmpty(FirstName);
 
         [JsonProperty("lastName")]
         public  string? LastName { get; set; }
@@ -61,14 +70,16 @@ namespace Fincra.SDK
         public bool ShouldSerializePhoneNumber() => !string.IsNullOrEmpty(PhoneNumber);
 
         [JsonProperty("accountHolderName")]
-        public required string AccountHolderName { get; set; }
+        public string? AccountHolderName { get; set; }
+        public bool ShouldSerializeAccountHolderName() => !string.IsNullOrEmpty(AccountHolderName);
 
         [JsonProperty("bank")]
         public Bank? Bank { get; set; }
         public bool ShouldSerializeBank() => Bank != null;
 
         [JsonProperty("address")]
-        public required Address Address { get; set; }
+        public Address? Address { get; set; }
+        public bool ShouldSerializeAddress() => Address != null;
 
         [JsonProperty("type")]
         public required string Type { get; set; }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sZrvVnd14LbukLaK7KlbBAq1pOL5Rjk8U+F6yHiMgOXKNNa8p2BTDish2og98Y9x1lDlgb5A/AFo8IeLk1M3/A==",
+  "dgSpecHash": "JtRA0syD37DZA2Egkkh/1ukeBCSdwy3ZjCK0+8liD4FxLabe7PX+l1i+otTA7X1D0v4YXDqcYYRvcCSg6Fo8pQ==",
   "success": true,
   "projectFilePath": "/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.Test/Fincra.Test.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,9 @@
     "/Users/jemiforgodspower/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
     "/Users/jemiforgodspower/.nuget/packages/nunit.analyzers/3.6.1/nunit.analyzers.3.6.1.nupkg.sha512",
     "/Users/jemiforgodspower/.nuget/packages/nunit3testadapter/4.4.2/nunit3testadapter.4.4.2.nupkg.sha512",
-    "/Users/jemiforgodspower/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+    "/Users/jemiforgodspower/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/microsoft.netcore.app.ref/7.0.11/microsoft.netcore.app.ref.7.0.11.nupkg.sha512",
+    "/Users/jemiforgodspower/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.11/microsoft.aspnetcore.app.ref.7.0.11.nupkg.sha512"
   ],
   "logs": []
 }

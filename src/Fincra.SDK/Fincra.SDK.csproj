@@ -24,6 +24,7 @@
     <None Remove="Verify\" />
     <None Remove="Wallet\" />
     <None Remove="Payout\" />
+    <None Remove="VirtualAccount\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Beneficiary\" />
@@ -33,5 +34,6 @@
     <Folder Include="Verify\" />
     <Folder Include="Wallet\" />
     <Folder Include="Payout\" />
+    <Folder Include="VirtualAccount\" />
   </ItemGroup>
 </Project>

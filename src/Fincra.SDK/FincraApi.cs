@@ -16,6 +16,7 @@ namespace Fincra.SDK
         IVerifyApi Verify { get; }
         IWalletApi Wallet { get; }
         IPayoutApi Payout { get; }
+        IVirtualAccountApi VirtualAccount { get;  }
     }
 
     public class FincraApi : IFincraApi
@@ -39,6 +40,7 @@ namespace Fincra.SDK
             Verify = new VerifyApi(this);
             Wallet = new WalletApi(this);
             Payout = new PayoutApi(this);
+            VirtualAccount = new VirtualAccountApi(this);
         }
 
         //public static JsonSerializerSettings SerializerSettings { get; } = new JsonSerializerSettings
@@ -56,6 +58,7 @@ namespace Fincra.SDK
         public IVerifyApi Verify { get; }
         public IWalletApi Wallet { get; }
         public IPayoutApi Payout { get; }
+        public IVirtualAccountApi VirtualAccount { get; }
 
         //private static T ParseAndResolveData<T>(ref string rawJson)
         //{

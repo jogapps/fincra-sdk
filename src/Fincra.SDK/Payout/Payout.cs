@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Fincra.SDK
 {
@@ -34,16 +33,19 @@ namespace Fincra.SDK
     {
         [JsonProperty("country")]
         public string? Country { get; set; }
-        public bool ShouldSerializeLastCountry() => !string.IsNullOrEmpty(Country);
+        public bool ShouldSerializeCountry() => !string.IsNullOrEmpty(Country);
 
         [JsonProperty("address")]
         public Address? Address { get; set; }
+        public bool ShouldSerializeAddress() => Address != null;
 
         [JsonProperty("document")]
         public Document? Document { get; set; }
+        public bool ShouldSerializeDocument() => Document != null;
 
         [JsonProperty("firstName")]
         public string? FirstName { get; set; }
+        public bool ShouldSerializeirstName() => !string.IsNullOrEmpty(FirstName);
 
         [JsonProperty("lastName")]
         public string? LastName { get; set; }
@@ -55,6 +57,7 @@ namespace Fincra.SDK
 
         [JsonProperty("type")]
         public string? Type { get; set; }
+        public bool ShouldSerializeType() => !string.IsNullOrEmpty(Type);
 
         [JsonProperty("accountHolderName")]
         public string? AccountHolderName { get; set; }
@@ -154,8 +157,6 @@ namespace Fincra.SDK
 
     public class ListPayoutParams
     {
-        public string? Reference { get; set; }
-
         public string[]? Status { get; set; } = Array.Empty<string>();
 
         public string? Business { get; set; }
