@@ -129,4 +129,69 @@ namespace Fincra.SDK
         public bool ShouldSerializeQuoteReference() => !string.IsNullOrEmpty(QuoteReference);
     }
 
+    public class WalletTransferRequest
+    {
+        [JsonProperty("amount")]
+        public string? Amount { get; set; }
+        public bool ShouldSerializeAmount() => !string.IsNullOrEmpty(Amount);
+
+        [JsonProperty("business")]
+        public string? Business { get; set; }
+        public bool ShouldSerializeBusiness() => !string.IsNullOrEmpty(Business);
+
+        [JsonProperty("customerReference")]
+        public string? CustomerReference { get; set; }
+        public bool ShouldSerializeCustomerReference() => !string.IsNullOrEmpty(CustomerReference);
+
+        [JsonProperty("description")]
+        public string? Description { get; set; }
+        public bool ShouldSerializeDescription() => !string.IsNullOrEmpty(Description);
+
+        [JsonProperty("BeneficiaryWalletNumber")]
+        public string? BeneficiaryWalletNumber { get; set; }
+        public bool ShouldSerializeBeneficiaryWalletNumber() => !string.IsNullOrEmpty(BeneficiaryWalletNumber);
+    }
+
+    public class ListPayoutParams
+    {
+        public string? Reference { get; set; }
+
+        public string[]? Status { get; set; } = Array.Empty<string>();
+
+        public string? Business { get; set; }
+
+        public string? SourceCurrency { get; set; }
+
+        public string? DestinationCurrency { get; set; }
+
+        public string? SubAccount { get; set; }
+
+        public int? Page { get; set; }
+
+        public int? PerPage { get; set; }
+
+        public DateTime? DateFrom { get; set; }
+
+        public DateTime? DateTo { get; set; }
+    }
+
+    public class UploadTransactionDocumentRequest
+    {
+        [JsonProperty("name")]
+        public string? Name { get; set; }
+        public bool ShouldSerializeName() => !string.IsNullOrEmpty(Name);
+
+        [JsonProperty("type")]
+        public string? Type { get; set; }
+        public bool ShouldSerializeType() => !string.IsNullOrEmpty(Type);
+
+        [JsonProperty("reference")]
+        public string? Reference { get; set; }
+        public bool ShouldSerializeReference() => !string.IsNullOrEmpty(Reference);
+
+        [JsonProperty("file")]
+        public string? File { get; set; }
+        public bool ShouldSerializeFile() => !string.IsNullOrEmpty(File);
+    }
+
 }
