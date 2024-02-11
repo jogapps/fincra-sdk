@@ -73,7 +73,7 @@ namespace Fincra.SDK
         public bool ShouldSerializeIncomeBand() => !string.IsNullOrEmpty(IncomeBand);
     }
 
-    public class createVirtualAccountRequest
+    public class CreateVirtualAccountRequest
     {
         [JsonProperty("currency")]
         public string? Currency { get; set; }
@@ -126,6 +126,36 @@ namespace Fincra.SDK
         [JsonProperty("merchantReference")]
         public string? MerchantReference { get; set; }
         public bool ShouldSerializeMerchantReference() => !string.IsNullOrEmpty(MerchantReference);
+    }
+
+    public class VirtualAccountParams
+    {
+        public string? Currency { get; set; }
+
+        public string? Status { get; set; }
+
+        public string? BusinessName { get; set; }
+
+        public string? IssuedDate { get; set; }
+
+        public string? RequestedDate { get; set; }
+
+        public string? AccountNumber { get; set; }
+
+        public string? BusinessId { get; set; }
+
+        public string? SubAccountId { get; set; }
+
+        public int? Page { get; set; }
+
+        public int? PerPage { get; set; }
+    }
+
+    public class DeactivateVirtualAccountRequest
+    {
+        [JsonProperty("business_reject_reason")]
+        public string? BusinessRejectReason { get; set; }
+        public bool ShouldSerializeBusinessRejectReason() => !string.IsNullOrEmpty(BusinessRejectReason);
     }
 }
 

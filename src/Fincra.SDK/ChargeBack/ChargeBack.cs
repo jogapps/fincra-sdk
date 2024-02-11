@@ -6,6 +6,7 @@ namespace Fincra.SDK
     {
         [JsonProperty("business_reject_reason")]
         public string? BusinessRejectReason { get; set; }
+        public bool ShouldSerializeBusinessRejectReason() => !string.IsNullOrEmpty(BusinessRejectReason);
     }
 }
 

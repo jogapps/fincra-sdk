@@ -10,7 +10,7 @@
 
         public ApiResponse<dynamic> PayWithTransfer(PayWithTransferRequest request)
         {
-            return _api.Post<ApiResponse<dynamic>>($"{FincraRoutes.VirtualAccount}", request);
+            return _api.Post<ApiResponse<dynamic>>($"{FincraRoutes.VirtualAccount}/transfer", request);
         }
 
         public ApiResponse<dynamic> ListCollectionMain(CollectionParams request)
