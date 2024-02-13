@@ -399,7 +399,7 @@
           }
         }
       },
-      "com.Fincra.SDK.Dotnet/1.0.1": {
+      "com.Fincra.SDK.Dotnet/1.0.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -1039,7 +1039,7 @@
         "version.txt"
       ]
     },
-    "com.Fincra.SDK.Dotnet/1.0.1": {
+    "com.Fincra.SDK.Dotnet/1.0.3": {
       "type": "project",
       "path": "../Fincra.SDK/Fincra.SDK.csproj",
       "msbuildProject": "../Fincra.SDK/Fincra.SDK.csproj"
@@ -1052,7 +1052,7 @@
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
       "NUnit3TestAdapter >= 4.4.2",
-      "com.Fincra.SDK.Dotnet >= 1.0.1",
+      "com.Fincra.SDK.Dotnet >= 1.0.3",
       "coverlet.collector >= 3.2.0"
     ]
   },
