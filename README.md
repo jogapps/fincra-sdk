@@ -111,7 +111,7 @@ The following services are available with this SDK
 - [List Sub-account Virtual Accounts](#list-sub-account-virtual-accounts)
 - [Deactivate a Virtual Account](#deactivate-a-virtual-account)
 
-**11**. [**Wallets**](#11-wallets)
+**10**. [**Wallets**](#10-wallets)
 
 - [List wallets](#list-wallets)
 - [List Wallet Logs](#list-wallet-logs)
@@ -712,7 +712,7 @@ var deactivated = fincra.VirtualAccount.DeactivateVirtualAccount(VirtualAccountI
 | ------------------ | ------------- | ------------ | ------------------------------ |
 | `VirtualAccountId` | string        | true         | The ID of the virtual account. |
 
-### 11. Wallets
+### 10. Wallets
 
 The wallet service consists of services that provide information such as account balances, wallet number of a wallet, or wallets for a business. With the wallet service, You can manage the account balance for your business and that of your subaccounts.
 
