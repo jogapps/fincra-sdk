@@ -58,7 +58,7 @@
     "/Users/jemiforgodspower/.nuget/packages/": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
       "projectUniqueName": "/Users/jemiforgodspower/Documents/godspower/programming/dotnet/Fincra/src/Fincra.SDK/Fincra.SDK.csproj",
       "projectName": "com.Fincra.SDK.Dotnet",
