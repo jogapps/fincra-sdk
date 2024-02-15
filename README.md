@@ -685,7 +685,7 @@ This method allows you to get a list of virtual accounts that belongs to a subac
 ```
 
 var request = new VirtualAccountParams { ... };
-var listSubVirtualAcct = await fincra.VirtualAccount.ListSubVirtualAccounts(request);
+var listSubVirtualAcct = fincra.VirtualAccount.ListSubVirtualAccounts(request);
 ```
 
 #### Parameters Supported
