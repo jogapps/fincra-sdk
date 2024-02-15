@@ -20,7 +20,7 @@ A community supported Dotnet SDK that enables developers to build fintech produc
 Using `Nuget`,
 
 ```
-Install-Package PayStack.Net
+Install-Package com.Fincra.SDK.Dotnet
 ```
 
 ## Usage
